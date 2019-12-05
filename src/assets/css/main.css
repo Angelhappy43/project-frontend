@@ -1,0 +1,32 @@
+/* CSS VARIBLES */
+:root {
+  --black-blue: #011015;
+  --text-main: #ffeffe;
+  --text-hl: #00a3ad;
+  --dark-acc: #004e60;
+  --bright-acc: #ba0c2f;
+}
+
+/* MAIN STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  background-color: var(--black-blue);
+  color: var(--text-main);
+}
+.pointer {
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.pointer:hover {
+  color: var(--text-hl);
+}
