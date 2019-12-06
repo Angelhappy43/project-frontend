@@ -19,4 +19,7 @@ export default {
 @import url('./assets/css/flexbox-utility.css');
 @import url('./assets/css/main.css');
 
+#app {
+  height: 100vh;
+}
 </style>

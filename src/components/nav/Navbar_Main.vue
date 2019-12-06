@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar--main fxbx f1">
+  <div class="navbar--main fxbx">
     <div class="navbar--brand fxbx f1 headline">
       <h1>ROOST</h1>
     </div>
@@ -21,6 +21,7 @@ export default {
 
 <style scoped>
 .navbar--main {
+  height: 4rem;
   border-bottom: 3px solid var(--dark-acc);
   padding: .5rem 1rem;
 }
