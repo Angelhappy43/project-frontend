@@ -1,7 +1,7 @@
 <template>
   <div class="navbar--main fxbx f1">
     <div class="navbar--brand fxbx f1 headline">
-      <h1>Simple Security Camera</h1>
+      <h1>ROOST</h1>
     </div>
     <NavbarItem text="Welcome" />
     <NavbarItem text="Dashboard" />
@@ -15,11 +15,7 @@ export default {
   components: {
     NavbarItem: navbarItem,
   },
-  computed: {
-    currentRoute() {
-      return this.$router.name;
-    },
-  },
+
 };
 </script>
 

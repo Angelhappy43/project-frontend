@@ -1,5 +1,8 @@
 <template>
-  <div class="navbar--item fxbx spc-ctr pointer">
+  <div
+    @click="navigateRoute"
+    v-if="this.text !== this.currentRoute"
+    class="navbar--item fxbx spc-ctr pointer">
     {{ text }}
   </div>
 </template>
@@ -10,6 +13,16 @@ export default {
     text: {
       type: String,
       required: true,
+    },
+  },
+  computed: {
+    currentRoute() {
+      return this.$route.name;
+    },
+  },
+  methods: {
+    navigateRoute() {
+      this.$router.push(this.text.toLowerCase());
     },
   },
 };
